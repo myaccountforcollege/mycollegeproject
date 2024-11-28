@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Олександра">
+    <meta name="keywords" content="Кіно, кінотатр, фільм, мультфільм">
+    <meta name="description" content="Мережа кінотеатрів">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Квитки</title>
+    <link rel="stylesheet" href="../css/buy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav role="navigation">
+                <label for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close" onclick></label>
+                <ul class="main-menu">
+                    <div class="menu">
+                        <li><img style="height: 50px; margin: 5px 0 0 0;" src="../images/logo.png"></li>
+                        <li><a href="../index.html">Головна</a></li>
+                        <li class="dropdown">
+                            <a href="#">Кінотеатр</a>
+                            <div class="dropdown-content">
+                                <a href="./movie1.html">м. Черкаси</a>
+                                <a href="./movie2.html">м. Сміла</a>
+                                <a href="./movie3.html">м. Умань</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Квитки</a></li>
+                        <li><a href="./help.html">Допомога</a></li>                        
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="formcontainer">
+        <h2 style="margin: 20px 0 0 0;" align="center">Квитки</h2>
+        <form name="buy" accept-charset="UTF-8">
+            <fieldset>
+                <legend>Ваша інформація</legend>
+                Прізвище: <input type="text" name="lastname" maxlength="20" placeholder="Прізвище">
+                <br><br> 
+                Ім'я: <input type ="text" name="firstname" placeholder="Ім'я">
+                <br><br>
+                По батькові: <input type ="text" name="firstname" placeholder="По батькові">
+                <br><br>
+                E-mail: <input type="email" name="email" placeholder="Ваша електронна пошта">
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Вибір сеансу</legend>
+                <select>
+                    <option value="0" selected disabled>Оберіть кінотеатр</option>
+                    <option value="1">м. Черкаси</option>
+                    <option value="2">м. Сміла</option>
+                    <option value="3">м. Умань</option>
+                </select>
+                <br><br>
+                <select>
+                    <option value="0" selected disabled>Оберіть фільм</option>
+                    <option value="1">Барбі</option>
+                    <option value="2">Дикий робот</option>
+                    <option value="3">Людина-павук: Крізь всесвіт</option>
+                    <option value="4">Меню</option>
+                    <option value="5">Оппенгеймер</option>
+                    <option value="6">Потік. Останній кіт на Землі</option>
+                    <option value="7">Суперники</option>
+                    <option value="8">Фуріоза: Шалений Макс. Сага</option>
+                </select>
+                <br><br>
+                <select>
+                    <option value="0" selected disabled>Оберіть сеанс</option>
+                    <option value="1">12.01</option>
+                    <option value="2">13.01</option>
+                    <option value="3">14.01</option>
+                    <option value="4">15.01</option>
+                    <option value="5">16.01</option>
+                    <option value="6">17.01</option>
+                    <option value="7">18.01</option>
+                </select>
+                <br><br>
+                Додаткова інформація:
+                <br>
+                <textarea cols="85" rows="3" required></textarea>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Умови використання</legend>
+                <input type="checkbox" name="termsconfirm" required>Я погоджуюсь з умовами використання
+                <br><br>
+                <input type="checkbox" name="termsconfirm" required>Я погоджуюсь з політикою конфіденційності
+                <br><br>
+                <div class="buttons">
+                    <input class="button" type="reset" name="terms" value="Ознайомитись з умовами"></input>
+                    <input class="button" type="reset" name="terms" style="margin: 0 20px;" value="Ознайомитись політикою конфіденційності"></input>
+                    <p><input class="button" type="submit" name="submit" value="Продовжити"></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+        <div class="links">
+            <a style="margin: 0 20px;" href="https://www.facebook.com/?locale=uk_UA">Facebook</a>
+            <a style="margin: 0 20px;" href="https://www.instagram.com/">Instagram</a>
+            <a style="margin: 0 20px;" href="https://twitter.com/?lang=uk">Twitter</a>
+            <a style="margin: 0 20px;" href="https://bsky.app/">Bluesky</a>
+        </div>
+    </div>
+</body>
+</html>
