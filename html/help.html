@@ -42,18 +42,18 @@
         <form name="help" accept-charset="UTF-8">
             <fieldset>
             <legend>Ваша інформація</legend>
-                Прізвище: <input type="text" name="lastname" maxlength="20" placeholder="Прізвище">
+                Прізвище: <input type="text" name="lastname" maxlength="20" placeholder="Прізвище" required>
                 <br><br> 
-                Ім'я: <input type ="text" name="firstname" placeholder="Ім'я">
+                Ім'я: <input type ="text" name="firstname" placeholder="Ім'я" required>
                 <br><br>
-                По батькові: <input type ="text" name="firstname" placeholder="По батькові">
+                По батькові: <input type ="text" name="firstname" placeholder="По батькові" required>
                 <br><br>
-                E-mail: <input type="email" name="email" placeholder="Ваша електронна пошта">
+                E-mail: <input type="email" name="email" placeholder="Ваша електронна пошта" required>
                 <br><br>
             </fieldset>
             <fieldset>
                 <legend>Опис проблеми</legend>
-                <select>
+                <select required>
                     <option value="0" selected disabled>Оберіть вашу проблему</option>
                     <option value="1">Вказали неправильну електронну пошту в замовленні</option>
                     <option value="2">Вказали неправильне ПІБ в замовленні</option>
@@ -63,14 +63,14 @@
                 <br><br>
                 Додаткова інформація:
                 <br>
-                <textarea cols="85" rows="3" required></textarea>
+                <textarea cols="85" rows="3"></textarea>
                 <br><br>
             </fieldset>
             <fieldset>
                 <legend>Умови використання</legend>
-                <input type="checkbox" name="termsconfirm" required>Я погоджуюсь з умовами використання
+                <input required type="checkbox" name="termsconfirm" required>Я погоджуюсь з умовами використання
                 <br><br>
-                <input type="checkbox" name="termsconfirm" required>Я погоджуюсь з політикою конфіденційності
+                <input required type="checkbox" name="termsconfirm" required>Я погоджуюсь з політикою конфіденційності
                 <br><br>
                 <div class="buttons">
                     <input class="button" type="reset" name="terms" value="Ознайомитись з умовами"></input>
